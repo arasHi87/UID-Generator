@@ -3,7 +3,7 @@ APP = api
 .PHONY: clean init
 
 init: clean
-	poetry env use $(which python3.8) 
+	poetry env use python3.8 
 	poetry install 
 	poetry run pre-commit install
 
