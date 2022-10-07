@@ -17,4 +17,4 @@ format:
 	poetry run black ${APP}
 	poetry run isort ${APP}
 
-ci-bundle: analysis format lint test
+ci-bundle: analysis format lint
