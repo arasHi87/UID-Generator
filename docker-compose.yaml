@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  uid-generator:
+    container_name: uid-generator
+    build: .
+    image: uid-generator:latest
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
