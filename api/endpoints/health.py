@@ -16,4 +16,4 @@ GET_HEALTH = {
 
 @router.get("/", response_model=schemas.Msg, status_code=200, responses=GET_HEALTH)
 def get_health() -> Any:
-    return {"detail": "Service healthy"}
+    return schemas.Msg(detail="Service healthy")
