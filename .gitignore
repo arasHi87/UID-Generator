@@ -1,6 +1,8 @@
 __pycache__
 .vscode
 .env
+.pytest_cache/
+.coverage
 
 # General
 .DS_Store
